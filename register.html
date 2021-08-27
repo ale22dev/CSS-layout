@@ -1,0 +1,85 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <title> formulario </title>
+</head>
+
+
+<body>
+    <form action="" method="POST" enctype="multipart/form-data">
+
+        <h1> cadastro </h1>
+
+        <label>Nome
+            <input type="text" name="name" placeholder="digite seu nome" autofocus="">
+        </label>
+
+        <label>Email
+            <input type="email" name="mail" placeholder="digite seu email" required="">
+        </label>
+
+        <label>Idade
+            <input type="number" name="age" min="12" placeholder="digite sua idade">
+        </label>
+
+        <label>Data de Nacimento
+            <input type="date" name="birthday" min="01-01-2009">
+        </label>
+
+        <label>Onde Você Possui Conta
+            <div>
+                <input type="checkbox" name="facebook">facebook
+                <input type="checkbox" name="instagram">instagram
+                <input type="checkbox" name="youtube">youtube
+            </div>
+        </label>
+
+        <label>Sexo
+            <div>
+                <input type="radio" name="opção" value="op1"> Masculino
+                <input type="radio" name="opção" value="op2"> Feminino
+            </div>
+        </label>
+
+        <label>Cor de olhos
+            <input type="color" name="eyes">
+        </label>
+
+        <label>Biografia
+            <textarea></textarea>
+        </label>
+
+        <label>Foto de perfil
+            <input type="file" accept="imagen/*" name="picture">
+        </label>
+
+        <label>Telefone
+            <input type="number" name="telephone" placeholder="digite seu telefone">
+        </label>
+
+        <label>Link do perfil de facebook
+            <input type="url" name="url" pattern=".com" required="">
+        </label>
+
+        <label>Senha
+            <input type="password" min="6" max="8" name="password" placeholder="digite sua senha">
+        </label>
+
+        <button class="reset" type="reset" name="button">limpar</button>
+        <button class="submit" type="submit" name="button"> enviar dados </button>
+
+
+    </form>
+
+
+
+</body>
+
+</html>
